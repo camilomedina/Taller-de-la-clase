@@ -16,26 +16,29 @@ public class ejercicio1 {
         
         // TODO code application logic here
      public static void main(String[] args) {
-        Scanner entrada= new Scanner(System.in);
+        Scanner dato= new Scanner(System.in);
         String nombre;
-        int notas;
-        double calificacion;
-        double notaTotal;
+        int nota;
+        int i=0,pregunta,promedio,acumulado=0;
+     
         // TODO code application logic here
         System.out.println("digite su nombre ");
-        nombre=entrada.next();
+        nombre=dato.next();
         
         System.out.println("digite la cantidad de notas que desea");
-        notas=entrada.nextInt();
-        
-        while(notas>1){
-            System.out.println("Ingresa calificación: ");
-            calificacion=entrada.nextDouble();
-            calificacion++;
-            
-            
+        pregunta=dato.nextInt();
+        while(pregunta<=0){
+            System.out.println("la cantidad de notas no puede ser menor a 0 ");
+            pregunta=dato.nextInt();
         }
-    
-        
-    }
+        while(pregunta>i){
+            System.out.println("Ingresa calificación: ");
+            nota=dato.nextInt();
+            acumulado=nota+0;
+                    i++;   
+        }
+        promedio=(acumulado/pregunta);
+         System.out.println("el promedio es "+promedio);
+     }
 }
+      
