@@ -28,16 +28,14 @@ public class ejercicio1 {
         System.out.println("digite la cantidad de notas que desea");
         notas=entrada.nextInt();
         
-        for(int i=0;i<notas;i++){
-            System.out.println("Ingresa calificación ");
+        while(notas>1){
+            System.out.println("Ingresa calificación: ");
             calificacion=entrada.nextDouble();
             calificacion++;
-            notaTotal=calificacion/notas;
-            System.out.println("Total del promedio de notas "+notaTotal);
             
             
         }
-       
+    
         
     }
 }
